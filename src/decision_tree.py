@@ -61,7 +61,7 @@ def encode(train, validate):
     return train, validate
 
 
-def make_model(train, model=Model.DECISION_TREE):
+def make_model(train, model=Model.RANDOM_FOREST):
     print("Creating decision tree model")
     train_dropped = train.drop('unit_sales', axis=1)
     target = train['unit_sales']
